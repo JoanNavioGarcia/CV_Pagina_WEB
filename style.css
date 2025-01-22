@@ -13,14 +13,27 @@ body{
 }
 .cabecera{
     height: 300px;
-    width: 100%;
     border: 3px solid black;
     padding: 10px;}
 .icono{
-
     background-color: black;
     height: 300px;
     width: 300px;
     border-radius: 100%;
     float: left;
+}
+.esqueleto{
+    height: 100%;
+    width: 100%;
+}
+
+.parrafo_izquierdo{
+    height: 1596.2px;
+    width: 50%;
+    background-color: black;
+}
+.parrafo_derecho{
+    height: 1596.2px;
+    width: 50%;
+    background-color: black;
 }
