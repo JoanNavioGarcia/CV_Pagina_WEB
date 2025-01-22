@@ -11,17 +11,27 @@ body{
     margin-bottom: 100px;
     padding: 50px;
 }
-.cabecera{
+header {
+    background-color: pink;
     height: 300px;
-    border: 3px solid black;
-    padding: 10px;}
-.icono{
+}
+
+.icono {
     background-color: black;
     height: 300px;
     width: 300px;
     border-radius: 100%;
+    overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
     float: left;
 }
+
+
+.icono img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Asegura que la imagen cubra todo el div sin distorsionarse, y recortará la imagen si es necesario */
+}
+
 .esqueleto{
     height: 100%;
     width: 100%;
@@ -35,5 +45,5 @@ body{
 .parrafo_derecho{
     height: 1596.2px;
     width: 50%;
-    background-color: black;
+    background-color: GREY;
 }
