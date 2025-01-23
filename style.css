@@ -1,28 +1,36 @@
 body{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: rgb(238, 224, 224 );
+    background-image: url('Imagenes/Fondo\ negro\ 1.jpg'); 
+    background-size: cover; 
+    background-position: center center; 
+    background-attachment: fixed; 
 }
-
+.nombre_cv {
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    margin: auto;
+  }
 .hoja_cv{
     height: 1920px;
     width: 1080px;
-    background-color: white;
-    margin: 100px;
-    box-shadow: 0px 0px 70px 3px;
+    background-color: rgb(247, 242, 242 );
+    margin: auto;
+    box-shadow: 0px 0px 10px 3px;
     margin-top: 100px;
     margin-bottom: 100px;
     padding: 50px;
 }
+header {
+    height: 300px;
+    display: flex; 
+    align-items: center; 
+}
 
 .icono {
-    background-color: black;
-    height: 300px;
-    width: 300px;
+    display: flex;
+    height: 100%;
+    width: 30%;
     border-radius: 100%;
     overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
     float: left;
@@ -37,4 +45,52 @@ body{
 .esqueleto{
     height: 100%;
     width: 100%;
+}
+
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: pink;
+}
+.cuerpo{
+    height: 100%;
+    width: 100%;
+}
+
+.contenedor1 {
+    display: flex; 
+    align-items: center; 
+    border-top: solid black 3px;
+}
+
+.div2 {
+    display: flex;
+    background-color: white;
+    height: 100%;
+    width: 40%;
+    flex-direction: column;  /* Apila los elementos verticalmente */
+    align-items: center;     
+}
+.div3 {
+    display: flex;
+    background-color: grey;
+    height: 100%;
+    width: 30%;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+/*Apartado para los dibujos del Header*/
+.cuadrado{
+    background-color: rgb(79, 105, 27);
+    align-items: center; 
+    height: 70px;
+    width: 100px;
+}
+.triangulo-abajo {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 35px solid rgb(79, 105, 27);   /* Borde superior visible (triángulo hacia abajo) */
 }
