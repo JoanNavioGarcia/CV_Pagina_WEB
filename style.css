@@ -95,6 +95,7 @@ header {
     display: flex;
     height: 80%;
     width: 100%;
+    be
 }
 .columna1{
     height: 100%;
@@ -103,6 +104,12 @@ header {
 .columna2{
     height: 100%;
     width: 50%;
+}
+
+.titulo_articulo{
+    height: 90px;
+    width: 100%;
+    border-bottom: solid black 3px;
 }
 
 /*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Footer ---------------------------------------------------------*/
