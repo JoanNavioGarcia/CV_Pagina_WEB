@@ -16,15 +16,17 @@ body{
     padding: 50px;
 }
 
-header {
-    height: 250px;
-    display: flex; 
-    align-items: center; 
-}
-
 .esqueleto{
     height: 100%;
     width: 100%;
+}
+
+/*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Header ---------------------------------------------------------*/
+
+header {
+    height: 15%;
+    display: flex; 
+    align-items: center; 
 }
 
 .contenedor1 {
@@ -46,14 +48,13 @@ header {
     border-radius: 100%;
     width: 70%; 
     height: 80%; 
-    object-fit: cover; /* Asegura que la imagen cubra todo el div sin distorsionarse, y recortará la imagen si es necesario */
 }
 
 .div2 {
     display: flex;
     height: 100%;
     width: 40%;
-    flex-direction: column;  /* Apila los elementos verticalmente */
+    flex-direction: column;
     align-items: center;     
 }
 .div3 {
@@ -73,7 +74,7 @@ header {
     font-size: 20px;
 }
 
-/*Apartado para los la forma del Header (FALTA INSERTAR UN DIBUJO EN MEDIO DEL CUADRADO)*/
+/*Apartado para los la forma del Header*/
 .cuadrado{
     background-color: rgb(41, 79, 13);
     align-items: center; 
@@ -86,4 +87,30 @@ header {
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     border-top: 35px solid rgb(41, 79, 13);
+}
+
+/*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Cuerpo ---------------------------------------------------------*/
+
+.cuerpo{
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+.columna1{
+    height: 100%;
+    width: 50%;
+    border-right: solid black 3px;
+    
+}
+.columna2{
+    height: 100%;
+    width: 50%;
+}
+
+/*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Footer ---------------------------------------------------------*/
+
+footer{
+    height: 5%;
+    width: 100%;
+    background-color: pink;
 }
