@@ -27,18 +27,20 @@ header {
     align-items: center; 
 }
 
-.icono {
+.div1 {
     display: flex;
     height: 100%;
     width: 30%;
-    border-radius: 100%;
+    justify-content: center;    /* Centra horizontalmente */
+    align-items: center;        /* Centra verticalmente */
     overflow: hidden; /* Asegura que la imagen no sobresalga del borde redondeado */
     float: left;
 }
 
-.icono img {
-    width: 100%; 
-    height: 100%; 
+.div1 img {
+    border-radius: 100%;
+    width: 70%; 
+    height: 70%; 
     object-fit: cover; /* Asegura que la imagen cubra todo el div sin distorsionarse, y recortará la imagen si es necesario */
 }
 
@@ -74,7 +76,8 @@ footer{
     display: flex;
     height: 100%;
     width: 30%;
-    justify-content: center;
+    justify-content: center;   
+    align-items: center;       
     flex-wrap: nowrap;
 }
 
@@ -82,6 +85,7 @@ footer{
     font-family: "Barlow Condensed", serif;
     font-weight: 500;
     font-style: normal;
+    font-size: 20px;
   }
 
 /*Apartado para los dibujos del Header*/
