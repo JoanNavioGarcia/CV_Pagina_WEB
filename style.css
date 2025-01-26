@@ -46,8 +46,8 @@ header {
 
 .div1 img {
     border-radius: 100%;
-    width: 70%; 
-    height: 80%; 
+    width: 65%; 
+    height: 70%; 
 }
 
 .div2 {
@@ -72,9 +72,6 @@ header {
     font-weight: 500;
     font-style: normal;
     font-size: 20px;
-}
-.texto_subtitulos{
-    
 }
 
 /*Apartado para los la forma del Header*/
@@ -118,11 +115,28 @@ header {
 
 /*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Footer ---------------------------------------------------------*/
 
-footer{
-    height: 5%;
+footer {
+    height: 100px; /* Ajusta según lo que necesites */
     width: 100%;
-    background-color: pink;
+    position: relative; /* Esto permite posicionar los elementos internos con respecto al footer */
 }
-li{
-    font-size: 12px;
+
+.contenedor2 {
+    display: flex; 
+    align-items: flex-end; /* Alinea los elementos en la parte inferior */
+    justify-content: center; /* Centra el contenido */
+    height: 100%;
+    width: 100%;
+    border-bottom: solid black 3px; /* La línea en la parte inferior */
+    position: relative; /* Necesario para que el triángulo se posicione dentro de este contenedor */
+}
+
+.triangulo-arriba {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 35px solid rgb(41, 79, 13); /* El color del triángulo */
+    position: absolute;
+    bottom: 0; /* Esto lo coloca pegado a la parte inferior del contenedor */
 }
