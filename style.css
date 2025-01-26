@@ -116,19 +116,19 @@ header {
 /*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Footer ---------------------------------------------------------*/
 
 footer {
-    height: 100px; /* Ajusta según lo que necesites */
+    height: 100px; 
     width: 100%;
-    position: relative; /* Esto permite posicionar los elementos internos con respecto al footer */
+    position: relative; 
 }
 
 .contenedor2 {
     display: flex; 
-    align-items: flex-end; /* Alinea los elementos en la parte inferior */
-    justify-content: center; /* Centra el contenido */
+    align-items: flex-end; 
+    justify-content: center; 
     height: 100%;
     width: 100%;
-    border-bottom: solid black 3px; /* La línea en la parte inferior */
-    position: relative; /* Necesario para que el triángulo se posicione dentro de este contenedor */
+    border-bottom: solid black 3px; 
+    position: relative; 
 }
 
 .triangulo-arriba {
@@ -136,7 +136,6 @@ footer {
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-bottom: 35px solid rgb(41, 79, 13); /* El color del triángulo */
+    border-bottom: 35px solid rgb(41, 79, 13); 
     position: absolute;
-    bottom: 0; /* Esto lo coloca pegado a la parte inferior del contenedor */
 }
