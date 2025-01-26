@@ -1,14 +1,15 @@
-body{
+/* Estilos generales */
+body {
     background-image: url('Imagenes/Fondo\ negro\ 1.jpg'); 
     background-size: cover; 
     background-position: center center; 
     background-attachment: fixed; 
 }
 
-.hoja_cv{
-    height: 1920px;
+.hoja_cv {
+    height: auto;
     width: 1080px;
-    background-color: rgb(247, 242, 242 );
+    background-color: rgb(247, 242, 242);
     margin: auto;
     box-shadow: 0px 0px 10px 3px;
     margin-top: 100px;
@@ -16,15 +17,15 @@ body{
     padding: 50px;
 }
 
-.esqueleto{
+.esqueleto {
     height: 100%;
     width: 100%;
 }
 
-/*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Header ---------------------------------------------------------*/
+/*-------------------------------------------------- Header ---------------------------------------------------------*/
 
 header {
-    height: 15%;
+    height: auto;
     display: flex; 
     align-items: center; 
 }
@@ -57,6 +58,7 @@ header {
     flex-direction: column;
     align-items: center;     
 }
+
 .div3 {
     display: flex;
     height: 100%;
@@ -66,7 +68,7 @@ header {
     flex-wrap: nowrap;
 }
 
-/*Apartado para las diferentes tipos de fuentes de texto del CV*/
+/* Fuentes de texto del CV */
 .texto_general {
     font-family: "Barlow Condensed", serif;
     font-weight: 500;
@@ -74,13 +76,14 @@ header {
     font-size: 20px;
 }
 
-/*Apartado para los la forma del Header*/
-.cuadrado{
+/* Estilos para el header */
+.cuadrado {
     background-color: rgb(41, 79, 13);
     align-items: center; 
     height: 70px;
     width: 100px;
 }
+
 .triangulo-abajo {
     width: 0;
     height: 0;
@@ -89,31 +92,21 @@ header {
     border-top: 35px solid rgb(41, 79, 13);
 }
 
-/*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Cuerpo ---------------------------------------------------------*/
+/*-------------------------------------------------- Cuerpo ---------------------------------------------------------*/
 
-.cuerpo{
+.cuerpo {
     display: flex;
-    height: 80%;
+    height: auto;
     width: 100%;
 }
-.columna1{
-    height: 100%;
+
+.columna1, .columna2 {
+    height: auto;
     width: 50%;
     padding: 25px;        
 }
-.columna2{
-    height: 100%;
-    width: 50%;
-    padding: 25px; 
-}
 
-.titulo_articulo{
-    height: 90px;
-    width: 100%;
-    border-bottom: solid black 3px;
-}
-
-/*-------------------------------------------------- Apartado con todo el contenido para poder hacer el Footer ---------------------------------------------------------*/
+/*-------------------------------------------------- Footer ---------------------------------------------------------*/
 
 footer {
     height: 100px; 
@@ -138,4 +131,50 @@ footer {
     border-right: 50px solid transparent;
     border-bottom: 35px solid rgb(41, 79, 13); 
     position: absolute;
+}
+
+/*--------------------------------- Media Queries para Pantallas Pequeñas ------------------------------------------*/
+
+@media (max-width: 768px) {
+    .hoja_cv {
+        width: 90%; 
+        padding: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .div1, .div2, .div3 {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .div1 img {
+        width: 50%; 
+        height: auto;
+    }
+
+    .texto_general {
+        font-size: 18px;
+    }
+
+    .cuerpo {
+        flex-direction: column;
+    }
+
+    .columna1, .columna2 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    footer {
+        height: 80px; 
+    }
+
+    .contenedor2 {
+        height: auto;
+        padding-bottom: 10px;
+    }
 }
