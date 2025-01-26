@@ -123,4 +123,6 @@ footer{
     width: 100%;
     background-color: pink;
 }
-/*-------------------------------------------------- Apartado con todo el contenido para modificar la tabla ------------------------------------------------------------*/
+li{
+    font-size: 12px;
+}
