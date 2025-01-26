@@ -135,7 +135,7 @@ footer {
 
 /*--------------------------------- Media Queries para Pantallas Pequeñas ------------------------------------------*/
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .hoja_cv {
         width: 90%; 
         padding: 20px;
