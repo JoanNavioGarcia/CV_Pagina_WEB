@@ -101,11 +101,13 @@ header {
 }
 .columna1{
     height: 100%;
-    width: 50%;        
+    width: 50%;
+    padding: 25px;        
 }
 .columna2{
     height: 100%;
     width: 50%;
+    padding: 25px; 
 }
 
 .titulo_articulo{
