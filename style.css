@@ -98,9 +98,7 @@ header {
 }
 .columna1{
     height: 100%;
-    width: 50%; 
-    border-right: solid black 1px;
-       
+    width: 50%;        
 }
 .columna2{
     height: 100%;
