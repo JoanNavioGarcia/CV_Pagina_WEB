@@ -95,11 +95,12 @@ header {
     display: flex;
     height: 80%;
     width: 100%;
-    be
 }
 .columna1{
     height: 100%;
-    width: 50%;    
+    width: 50%; 
+    border-right: solid black 1px;
+       
 }
 .columna2{
     height: 100%;
